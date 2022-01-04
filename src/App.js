@@ -1,19 +1,14 @@
 import React from 'react'
-import Navbar from './components/Navbar'
-import { BrowserRouter, Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header'
 import './App.css';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <>
-    <Router>
-    <Navbar />
-    <Switch>
-    <Route path = '/' exact />
-    </Switch>
-    </Router>
-    </>
+class App extends Component() {
+render(){
+      return (
+        <Header />
   );
+}
 }
 
 export default App;

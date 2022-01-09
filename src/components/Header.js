@@ -1,9 +1,11 @@
-import React from 'react'
+import React  from 'react'
 
-const Header = ()=> {
-           <div className="navbar-container">
-            Navbar
-           </div>
+function Header() {
+    return (
+            <h1>Hello</h1>
+     
+    )
 }
 
-export default Header;
+export default Header
+

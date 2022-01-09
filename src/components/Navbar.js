@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import SearchIcon from '@mui/icons-material/Search';
 
 const Container = styled.div`
     background-color: #f4f4f4 ; 
@@ -25,25 +26,25 @@ const Wrapper = styled.div`
 const Left = styled.div`
 flex: 1;
 padding:35px;
+display: flex;
+align-items: center;
 `
 const Input = styled.input`
+    border: none;
+    height:28px;
+    width: 245px;
+ 
+`
+const SearchContainer = styled.div`
  height: 29px;
  width: 245px;
  border: none;
  padding-left: 10px;
- box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15)
+ display: flex;
+ align-items: center;
+ background-color: orange;
+ box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.15);
  
-`
-const Search = styled.button`
-padding: 5px;
-position:relative;
-
-  background-color: #ff6600;
-  border: none;
-  height: 29px;
-  width: 39px;
-  color: white;
-  
 `
 const Center = styled.div`
 flex: 1;
@@ -59,9 +60,12 @@ const Navbar = () => {
         <>
         <Container >
         <Wrapper>
-        <Left><Input placeholder="Search..."/><Search><svg width="13" height="13"  viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.3752 11.3749L8.94525 8.94067L11.3752 11.3749ZM10.2918 5.68742C10.2918 6.90852 9.80675 8.07961 8.9433 8.94306C8.07985 9.80651 6.90876 10.2916 5.68766 10.2916C4.46656 10.2916 3.29547 9.80651 2.43203 8.94306C1.56858 8.07961 1.0835 6.90852 1.0835 5.68742C1.0835 4.46632 1.56858 3.29523 2.43203 2.43178C3.29547 1.56833 4.46656 1.08325 5.68766 1.08325C6.90876 1.08325 8.07985 1.56833 8.9433 2.43178C9.80675 3.29523 10.2918 4.46632 10.2918 5.68742V5.68742Z" stroke="#F8F8F8" stroke-width="2" stroke-linecap="round"/>
-</svg></Search> </Left>
+        <Left>
+            <SearchContainer >
+            <Input />
+                <SearchIcon />
+            </SearchContainer>
+        </Left>
         
         <Center><svg width="320" height="52" viewBox="0 0 320 52" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.93872 16.24C1.64026 16.3592 1.38386 16.5643 1.20193 16.8292C1.02001 17.0941 0.920735 17.4071 0.916665 17.7284C0.912594 18.0498 1.00391 18.3652 1.17907 18.6346C1.35422 18.9041 1.60535 19.1156 1.90069 19.2423C2.19603 19.369 2.52233 19.4054 2.83831 19.3467C3.15429 19.288 3.44577 19.1369 3.67589 18.9125C3.906 18.6882 4.06442 18.4006 4.13111 18.0862C4.19779 17.7718 4.16976 17.4447 4.05054 17.1462C3.89067 16.746 3.57836 16.4257 3.18232 16.2557C2.78628 16.0858 2.33894 16.0801 1.93872 16.24Z" fill="#666666"/>

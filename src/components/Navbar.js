@@ -8,18 +8,12 @@ const Container = styled.div`
     background-color: #f4f4f4 ; 
     position: absolute;
     width: 1440px;
-    height: 100px;
-    left: 0px;
-    top: 0px;
-`
-const Boxcontainer = styled.div`
-    background-color: #f4f4f4 ; 
-    width: 1440px;
     height: 173px;
     left: 0px;
     top: 0px;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
 `
+
 const Wrapper = styled.div`
     padding: 10px 20px;
     display: flex;
@@ -97,7 +91,6 @@ const Navbar = () => {
         </Right>
         </Wrapper>
         </Container>
-        <Boxcontainer>HOME NEW SHOP MENS WOMANS CONTACT</Boxcontainer>
         </>
        
        

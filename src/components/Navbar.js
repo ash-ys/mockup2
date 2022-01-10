@@ -6,7 +6,6 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 const Container = styled.div`
     background-color: #f4f4f4 ; 
-    position: absolute;
     width: 100%;
     height: 175px;
     left: 0px;
@@ -16,7 +15,6 @@ const Container = styled.div`
 `
 
 const Wrapper = styled.div`
-    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
 `
@@ -62,8 +60,32 @@ font-size: 15px;
     cursor: pointer;
     margin-left: 25px;
     justify-content: center;
-    font-size: 15px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+`
+const Menu = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:center;
+    margin-bottom: 90px;
+    
+
+`
+const MenuLink = styled.a`
+font-size: 15px;
+color: black;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+margin: 0 1.5rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  text-decoration:none;
+  &:hover {
+    color: #ff6600;
+    border-bottom: 1px solid #ff6600;
+  }
+  &:active {
+    color: red;
+  }
 `
 
 
@@ -93,7 +115,15 @@ const Navbar = () => {
             <MenuItem>Login</MenuItem>
             <MenuItem> <LocalMallIcon /> </MenuItem>
         </Right>
+        
         </Wrapper>
+        <Menu>
+        <MenuLink href="">HOME</MenuLink>
+        <MenuLink href="">WHAT'S NEW</MenuLink>
+        <MenuLink href="">MENS</MenuLink>
+        <MenuLink href="">WOMENS</MenuLink>
+        <MenuLink href="">CONTACT US</MenuLink>
+        </Menu>
         </Container>
         
         </>

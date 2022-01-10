@@ -1,11 +1,14 @@
 import React from 'react'
 import Navbar from './components/Navbar';
-import { Routers } from './components/Routers';
+import Slider from './components/Slider';
+
+
 
 const App = ()=> {
       return (
         <>
-        <Routers />
+        <Navbar />
+        <Slider />
         </>
   );
 }

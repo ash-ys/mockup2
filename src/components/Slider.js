@@ -45,11 +45,15 @@ const H1 = styled.div`
 font-weight: 500;
 font-size: 25px;
 margin: 0.4rem 0; 
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
 `
 const H3 = styled.div`
 font-size: 18px;
     font-weight: 500;
     margin: 0.7rem 0 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
 `
 
 const Slider = () => {

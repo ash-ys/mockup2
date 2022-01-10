@@ -36,6 +36,7 @@ const SearchContainer = styled.div`
  align-items: center;
  color: white;
  background-color: #ff6600;
+ cursor: pointer;
 
 `
 const Center = styled.div`
@@ -56,16 +57,24 @@ font-size: 15px;
     cursor: pointer;
     margin-left: 25px;
     justify-content: center;
+    &:hover {
+    color: #ff6600;
+    border-bottom: 1px solid #ff6600;
+  }
+  &:active {
+    color: red;
+  }
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 `
 const Menu = styled.div`
     align-items: center;
     justify-content:center;
-    position: absolute;
+    margin-left: 450px;
 
 `
 const MenuLink = styled.a`
 font-size: 15px;
+margin-left: 400px;
 color: black;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 margin: 0 1.5rem;

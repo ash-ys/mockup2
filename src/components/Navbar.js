@@ -6,12 +6,8 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 
 const Container = styled.div`
     background-color: #f4f4f4 ; 
-    width: 100%;
-    height: 175px;
-    left: 0px;
-    top: 0px;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
-
+    padding-bottom: 20px;
 `
 
 const Wrapper = styled.div`
@@ -63,12 +59,9 @@ font-size: 15px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 `
 const Menu = styled.div`
-    display: flex;
-    justify-content: center;
     align-items: center;
     justify-content:center;
-    margin-bottom: 90px;
-    
+    position: absolute;
 
 `
 const MenuLink = styled.a`
@@ -79,6 +72,8 @@ margin: 0 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
   text-decoration:none;
+
+
   &:hover {
     color: #ff6600;
     border-bottom: 1px solid #ff6600;

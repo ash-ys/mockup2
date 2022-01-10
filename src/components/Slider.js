@@ -7,8 +7,6 @@ max-width: 1400px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 400px;
-    background-color: #f4f4f4;
 `
 const Left = styled.div`
 flex: 1;
@@ -35,10 +33,24 @@ flex: 1;
 display: flex;
 align-items: center;
 justify-content: flex-start;
+`
+const H6 = styled.div`
+    font-size: 14px;
+    position: relative;
+    font-weight: 400;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 
 `
-
-
+const H1 = styled.div`
+font-weight: 500;
+font-size: 25px;
+margin: 0.4rem 0; 
+`
+const H3 = styled.div`
+font-size: 18px;
+    font-weight: 500;
+    margin: 0.7rem 0 1rem;
+`
 
 const Slider = () => {
     return (
@@ -46,9 +58,9 @@ const Slider = () => {
         <Left>
         <SmallLine />
         <BigLine />
-        <h6 style={{FontFamily:"Roboto"}}>Type:Shoes</h6>
-        <h1>Mens vintage leather shoes</h1>
-        <h3>Price: Rs 3400/-</h3>
+        <H6>Type:Shoes</H6>
+        <H1>Mens vintage leather shoes</H1>
+        <H3>Price: Rs 3400/-</H3>
         </Left>
         <Right>
 K xa

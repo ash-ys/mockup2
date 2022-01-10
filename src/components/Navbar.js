@@ -7,11 +7,12 @@ import LocalMallIcon from '@mui/icons-material/LocalMall';
 const Container = styled.div`
     background-color: #f4f4f4 ; 
     position: absolute;
-    width: 1440px;
-    height: 173px;
+    width: 100%;
+    height: 175px;
     left: 0px;
     top: 0px;
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
+
 `
 
 const Wrapper = styled.div`
@@ -64,13 +65,16 @@ font-size: 15px;
     font-size: 15px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 `
+
+
+
 const Navbar = () => {
     return (
         <>
         <Container >
         <Wrapper>
         <Left>
-        <Input />
+        <Input  placeholder='Search...'/>
             <SearchContainer >
             <SearchIcon />
             </SearchContainer>
@@ -91,6 +95,7 @@ const Navbar = () => {
         </Right>
         </Wrapper>
         </Container>
+        
         </>
        
        

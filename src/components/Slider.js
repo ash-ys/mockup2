@@ -1,19 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const Component = styled.div`
 max-width: 1400px;
     padding: 0 25px;
-    margin: 0 auto;
-    display: grid;
+    margin: 80px 40px;
+    display: flex;
     grid-template-columns: 1fr 1fr;
 `
 const Left = styled.div`
-flex: 1;
+flex: 2;
 padding:35px;
 display: flex;
 align-items: center;
 display: inline-block;
+
 `
 const SmallLine = styled.div`
 border-top: 2px solid #7f7f7f;
@@ -28,11 +30,52 @@ width:80px;
 
 `
 const Right = styled.div`
-
 flex: 1;
+padding:35px;
 display: flex;
 align-items: center;
-justify-content: flex-start;
+display: inline-block;
+align-content: center;
+
+`
+const SliderImg = styled.div`
+  position: relative;
+    width: 300px;
+    height: 200px;
+    
+
+    &::before {
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -13px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,102,0,.2);
+}
+&::after {
+    content: "";
+    position: absolute;
+    bottom: -13px;
+    right: -13px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255,102,0,.6);
+}
+    
+`
+
+const ImageSl = styled.img`
+    position: relative;
+    background-position: 50%;
+    background-size: cover;
+    bottom: 47px;
+    right: 40px;
+    background-repeat: no-repeat;
+
+    width: 130%;
+    height: 130%;
+    z-index: 1;
 `
 const H6 = styled.div`
     font-size: 14px;
@@ -55,6 +98,65 @@ font-size: 18px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 
 `
+const CustomButton = styled.button`
+    text-align: center;
+    background-color: #f60;
+    margin-right: 2rem;
+    padding: 15px 45px;
+    border:none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #ff6600;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+`
+
+
+
+const CustomBtn = styled.div`
+    display: inline-block;
+    position: relative;
+    padding: 3px 1px;
+    cursor: pointer;
+    &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+}
+    &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+}
+`
+const AddToCart = styled.button`
+padding: 14px 45px;
+border: none;
+font-size:16px;
+background-color:white;
+text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
+`
+
+
+
 
 const Slider = () => {
     return (
@@ -65,9 +167,15 @@ const Slider = () => {
         <H6>Type:Shoes</H6>
         <H1>Mens vintage leather shoes</H1>
         <H3>Price: Rs 3400/-</H3>
+        <div>
+        <CustomButton >view</CustomButton>
+        <CustomBtn >
+        <AddToCart>add to cart</AddToCart>
+        </CustomBtn>
+        </div>
         </Left>
         <Right>
-K xa
+        <SliderImg ><ImageSl src={"	https://freepngimg.com/thumb/fashion/134876-bag-girl-shopping-excited-holding.png"} /></SliderImg>
         </Right>
         </Component>
     )

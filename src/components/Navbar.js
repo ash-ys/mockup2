@@ -8,6 +8,10 @@ const Container = styled.div`
     background-color: #f4f4f4 ; 
     box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.1);
     padding-bottom: 20px;
+    width: 100%; 
+    top: 0;
+    left: 0;
+    z-index: 999;
 `
 
 const Wrapper = styled.div`
@@ -81,6 +85,7 @@ margin: 0 1.5rem;
     text-transform: uppercase;
     font-weight: 500;
   text-decoration:none;
+  padding: 10px 0;
 
 
   &:hover {
@@ -96,7 +101,7 @@ margin: 0 1.5rem;
 
 const Navbar = () => {
     return (
-        <>
+        
         <Container >
         <Wrapper>
         <Left>
@@ -130,7 +135,7 @@ const Navbar = () => {
         </Menu>
         </Container>
         
-        </>
+       
        
        
     )

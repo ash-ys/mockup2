@@ -19,6 +19,6 @@
   position: relative;
   top: 1.5px;
 }
-.li::marker::marker {
-  background: none;
+.swiper-slide::marker {
+  color: white;
 }

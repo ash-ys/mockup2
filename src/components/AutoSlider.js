@@ -21,7 +21,7 @@ const AutoSlider = () => {
           itemName="Men Vintage Leather Ankle Boot"
           price="3400"
         />
-        <SlideImage src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" />
+        <SlideImage src="https://freepngimg.com/thumb/fashion/134876-bag-girl-shopping-excited-holding.png" />
       </div>
     </div>
   );

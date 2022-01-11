@@ -2,11 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 const ImgBg = styled.div`
-  flex: 1;
-  align-self: center;
-  height: 200px;
-  width: 300px;
   position: relative;
+    width: 300px;
+    height: 200px;
+    
 
   &::before {
     content: "";
@@ -30,10 +29,15 @@ const ImgBg = styled.div`
 
 const SliderImg = styled.img`
   position: relative;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+    background-position: 50%;
+    background-size: cover;
+    bottom: 47px;
+    right: 40px;
+    background-repeat: no-repeat;
+
+    width: 130%;
+    height: 130%;
+    z-index: 1;
 `;
 
 const SlideImage = (props) => {

@@ -1,0 +1,24 @@
+.swiper-container {
+  width: 500px;
+  height: 800px;
+}
+
+.swiper-wrapper {
+  padding-inline-start: 0;
+}
+
+.swiper-pagination-bullet {
+  height: 5px;
+  width: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff6600;
+  height: 8px;
+  width: 8px;
+  position: relative;
+  top: 1.5px;
+}
+.li::marker::marker {
+  background: none;
+}

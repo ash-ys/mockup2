@@ -68,7 +68,6 @@ font-size: 15px;
   &:active {
     color: red;
   }
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 `
 const Menu = styled.div`
     align-items: center;
@@ -80,7 +79,6 @@ const MenuLink = styled.a`
 font-size: 15px;
 margin-left: 400px;
 color: black;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 margin: 0 1.5rem;
     text-transform: uppercase;
     font-weight: 500;

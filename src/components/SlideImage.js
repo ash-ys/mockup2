@@ -3,8 +3,8 @@ import styled from "styled-components";
 
 const ImgBg = styled.div`
   position: relative;
-    width: 300px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     
 
   &::before {
@@ -31,19 +31,18 @@ const SliderImg = styled.img`
   position: relative;
     background-position: 50%;
     background-size: cover;
-    bottom: 47px;
-    right: 40px;
     background-repeat: no-repeat;
 
-    width: 130%;
-    height: 130%;
+    width: 100%;
+    height: 100%;
     z-index: 1;
 `;
 
-const SlideImage = (props) => {
+
+const SlideImage = ({data}) => {
   return (
     <ImgBg>
-      <SliderImg src={props.src} />
+      <SliderImg src={data.imageUrl} ></SliderImg>
     </ImgBg>
   );
 };

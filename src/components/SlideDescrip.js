@@ -84,16 +84,16 @@ font-size: 18px;
 
 `
 
-const SlideDescrip = (props) => {
+const SlideDescrip = ({data}) => {
   return (
     <SlideDes>
       <SmallLine></SmallLine>
       <BigLine></BigLine>
-      <H6>Type:{props.type}</H6>
+      <H6>Type:{data.type}</H6>
       <H1 style={{ margin: "6px 0px", textTransform: "uppercase" }}>
-        {props.itemName}
+        {data.name}
       </H1>
-      <H3 style={{ margin: "12px 0px" }}>Rs. {props.price}</H3>
+      <H3 style={{ margin: "12px 0px" }}>Rs. {data.price}</H3>
       <div>
         <ViewButton>View</ViewButton>
         <CartDiv>

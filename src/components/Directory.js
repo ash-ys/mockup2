@@ -23,7 +23,7 @@ background-color: yellowgreen;
     margin: 0 7.5px 15px;
     overflow: hidden;
 `
-const Image = styled.div`
+const Image = styled.img`
 width: 100%;
     height: 100%;
     background-position: 50%;

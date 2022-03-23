@@ -63,15 +63,36 @@ font-size: 24px;
     font-weight: 300;
     cursor: pointer;
 `
+const Anim = styled.div`
+position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #fff;
+    opacity: 0;
+    transition: .4s;
+    cursor: pointer;
+`
 const SpecialOffers = () => {
     return (
         <Components>
-        
-            <Title>Special Offers</Title>
+
+            <Title>Special Offers<Anim /></Title>
             <SpecialCards>
+            <Ribbon ><Sale>Sale</Sale></Ribbon>
             <div>
                 <SpecialCardsImg src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" />
-                <Ribbon ><Sale>Sale</Sale></Ribbon>
+                
                 <Content><H4>Ruffle dress</H4><del style={{fontSize: "15px",textDecoration: "line-through",
     color: "rgba(0,0,0,.6)",margin: "1rem  0",fontWeight: "100"}}>Nrs: 2000/-</del> <h6 style={{fontSize: "20px",
     fontWeight: "100",color: "#f60"}}>Nrs: 1200/-</h6></Content>
